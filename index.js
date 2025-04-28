@@ -1,23 +1,23 @@
-// import React, { Component } from 'react';
-// import { render } from 'react-dom';
-// import Button from './button'
-// import './style.css';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import Button from './button'
+import './style.css';
 
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       name: 'React'
-//     };
-//   }
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: 'React'
+    };
+  }
 
-//   render() {
-//     return (
-//       <div className = 'body-container'>
-//         <Button color="blue" label = "facebook" />
-//       </div>
-//     );
-//   }
-// }
+  render() {
+    return (
+      <div className = 'body-container'>
+        <Button color="blue" label = "facebook" />
+      </div>
+    );
+  }
+}
 
-// render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
