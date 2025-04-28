@@ -11,6 +11,8 @@ function CodeReview() {
   const [freeReviewsLeft, setFreeReviewsLeft] = useState(3);
   const [showPopup, setShowPopup] = useState(false);
 
+ 
+
   const formatReviewText = (text) => {
     if (!text) return '';
     let formatted = text
@@ -30,7 +32,7 @@ function CodeReview() {
     }
     setLoading(true);
     try {
-      const genAI = new GoogleGenerativeAI('AIzaSyD52y3FHKYs9VXgA7Z4PFzE1YHosQMANgw');
+      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
 
       const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
 
