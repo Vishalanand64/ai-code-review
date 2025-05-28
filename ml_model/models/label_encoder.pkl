@@ -1,0 +1,9 @@
+# Save dummy label encoder
+import pickle
+from sklearn.preprocessing import LabelEncoder
+
+label_encoder = LabelEncoder()
+label_encoder.fit(["bug", "optimization", "syntax_error", "formatting"])
+
+with open("models/label_encoder.pkl", "wb") as f:
+    pickle.dump(label_encoder, f)

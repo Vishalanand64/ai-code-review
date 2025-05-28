@@ -34,7 +34,7 @@ function CodeReview() {
     try {
       const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
 
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
       const prompt = `You are a Senior Code Reviewer (7+ years experience). Structure the feedback clearly. 
 Use sections with headings like "Bugs Found", "Optimization Suggestions", "Code Quality", "Complexity", etc.
